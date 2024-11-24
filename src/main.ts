@@ -17,7 +17,6 @@ function dameCarta (){
   const numeroAleatorio = Math.floor(Math.random() * posiblesValores.length);
   return posiblesValores[numeroAleatorio];
 }
-
 function mostrarCarta(valorCarta: number): void {
   const imagenDiv = document.getElementById("imagen-carta") as HTMLImageElement;
 
@@ -80,7 +79,6 @@ function mostrarCarta(valorCarta: number): void {
 
   imagenDiv.src = urlImagen;
 }
-
 function actualizarPuntuacion(puntuacion: number, valorCarta: number): number {
   if (valorCarta >= 10) {
     puntuacion = puntuacion + 0.5; 
@@ -89,7 +87,6 @@ function actualizarPuntuacion(puntuacion: number, valorCarta: number): number {
   }
   return puntuacion;
 }
-
 function handleClickDameCarta(): void {
   if (puntuacion > 7.5) {
     return;
@@ -114,7 +111,6 @@ function deshabilitarBotonCartaNueva ():void{
     console.error("Botón 'Nueva Carta' no encontrado.");
   }
 }
-
 function handleClickMeRindo ():void {
   deshabilitarBotonCartaNueva();
   let mensaje: string = "";

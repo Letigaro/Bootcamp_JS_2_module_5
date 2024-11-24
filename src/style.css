@@ -5,6 +5,9 @@ body {
   background-color: #ffffff;
   color: #333333;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
@@ -12,6 +15,19 @@ h1 {
   margin: 20px 0;
   color: #333333;
   font-weight: 700;
+}
+
+#app {
+  margin-bottom: 20px;
+}
+
+#imagen-carta {
+  max-width: 90%;
+  height: auto;
+  border: 2px solid #dddddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
 }
 
 button {
@@ -36,13 +52,20 @@ button:active {
   background-color: #cccccc;
 }
 
-#imagen-carta {
-  margin-top: 20px;
-  max-width: 90%;
-  height: auto;
-  border: 2px solid #dddddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Estilos para botones deshabilitados */
+button:disabled {
+  background-color: #eeeeee;
+  color: #aaaaaa;
+  border-color: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Contenedor de los botones */
+#botones-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 #puntuacion,

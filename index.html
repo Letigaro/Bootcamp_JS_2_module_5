@@ -5,17 +5,19 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juego de las 7 y media</title>
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
     <div id="app">
       <h1>Juego de las 7 y media</h1>
     </div>
-    <script type="module" src="/src/main.ts"></script>
-    <div id="puntuacion"></div>
-    <button id="dame_carta">Carta nueva</button>
-    <button id="rendirse"> Me rindo</button>
     <img id="imagen-carta" alt="Carta">
+    <div id="puntuacion"></div>
+    <div id="botones-container">
+      <button id="dame_carta">Carta nueva</button>
+      <button id="rendirse">Me rindo</button>
+    </div>
     <div id="mensaje-final"></div>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
