@@ -52,7 +52,6 @@ button:active {
   background-color: #cccccc;
 }
 
-/* Estilos para botones deshabilitados */
 button:disabled {
   background-color: #eeeeee;
   color: #aaaaaa;
@@ -61,7 +60,6 @@ button:disabled {
   transform: none;
 }
 
-/* Contenedor de los botones */
 #botones-container {
   display: flex;
   flex-direction: column;
